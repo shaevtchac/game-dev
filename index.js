@@ -1,4 +1,4 @@
-//menu
+//_______________________________________________________________ menu _______________________________________________________________
 const divTrigger = document.createElement('div');
 divTrigger.setAttribute('data-menu-trigger', '');
 document.body.prepend(divTrigger);
@@ -6,21 +6,23 @@ document.body.prepend(divTrigger);
 const nav = document.getElementById('main-nav');
 const mobileNav = document.getElementById('mobile-nav');
 
+//open menu button click
 document.getElementById('main-nav-button').addEventListener('click', () => {
   mobileNav.classList.remove('-top-full');
   mobileNav.classList.add('top-0')
 })
+// close menu button click
 document.getElementById('mobile-nav-button').addEventListener('click', () => {
   mobileNav.classList.add('-top-full');
   mobileNav.classList.remove('top-0');
 })
-
+//menu item click
 document.querySelectorAll('#mobile-nav ul li').forEach(listElement => listElement.addEventListener('click', () => {
   mobileNav.classList.add('-top-full');
   mobileNav.classList.remove('top-0');
 }))
 
-
+//scroll menu change
 const menuObserver = new IntersectionObserver(
   (entries) => {
     const entry = entries[0];
