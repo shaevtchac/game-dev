@@ -18,12 +18,14 @@
 
   <!-- navigation menu -->
 
-  <nav class="fixed top-10 w-full z-30">
+  <nav id="main-nav" class="text-white fixed top-10 w-full z-30 bg-opacity-50 transition-all duration-500">
+  <!-- <nav id="main-nav" class="text-white fixed top-0 w-full z-30 bg-black bg-opacity-50 transition-all duration-500"> -->
     <div class="max-w-[1366px]">
-      <div class="flex items-center justify-between text-white w-11/12 md:w-10/12 mx-auto">
+      <div class="flex items-center justify-between  w-11/12 md:w-10/12 mx-auto">
         <!-- logo -->
         <p class="font-raleway text-[40px] font-black">GD.</p>
-        <ul class="flex gap-14 items-center">
+        <button id="main-nav-button" class="bg-transparent px-0 py-0 mn:hidden "><img src="img/menu.svg" alt="menu icon" ></button>
+        <ul class="mn:flex gap-14 items-center hidden">
           <li class="font-bold"><a href="#">About</a></li>
           <li class="font-bold"><a href="#">Services</a></li>
           <li class="font-bold"><a href="#">Our work</a></li>
@@ -32,12 +34,20 @@
       </div>
     </div>
   </nav>
-
+  <div id="mobile-nav" class="bg-black w-full h-screen fixed -top-full left-0 z-40 text-white transition-all duration-500 ">
+    <button id="mobile-nav-button"  class="p-0 bg-transparent"><img src="img/menu-close.svg" alt="menu x icon" class="absolute top-5 right-5" ></button>
+    <ul class="flex gap-14 justify-center items-center flex-col h-screen ">
+      <li class="font-bold"><a href="#">About</a></li>
+      <li class="font-bold"><a href="#">Services</a></li>
+      <li class="font-bold"><a href="#">Our work</a></li>
+      <li class="font-bold"><a href="#"><button class="bg-orange">Enroll Now</button></a></li>
+    </ul>
+  </div>
   <!-- end of navigation menu  -->
 
 
   <!-- hero section  -->
-  <header class="bg-gradient-to-b from-lightblue to-[#3B448F] text-white  pt-32">
+  <header class="bg-gradient-to-b from-lightblue to-[#3B448F] text-white  pt-32 overflow-hidden">
     <div class="mx-auto w-11/12 md:w-10/12 grid lg:grid-cols-[40%_1fr] items-center">
 
       <!-- left -->
