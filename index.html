@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;900&display=swap"
+    rel="stylesheet">
+  <title>Title</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" type="module"></script>
+</head>
+
+<body class="mx-auto max-w-[1366px] font-poppins relative">
+
+  <!-- navigation menu -->
+
+  <nav class="fixed top-10 w-full z-30">
+    <div class="max-w-[1366px]">
+      <div class="flex items-center justify-between text-white w-11/12 md:w-10/12 mx-auto">
+        <!-- logo -->
+        <p class="font-raleway text-[40px] font-black">GD.</p>
+        <ul class="flex gap-14 items-center">
+          <li class="font-bold"><a href="#">About</a></li>
+          <li class="font-bold"><a href="#">Services</a></li>
+          <li class="font-bold"><a href="#">Our work</a></li>
+          <li class="font-bold"><a href="#"><button class="bg-darkgreen">Enroll Now</button></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- end of navigation menu  -->
+
+
+  <!-- hero section  -->
+  <header class="bg-gradient-to-b from-lightblue to-[#3B448F] text-white  pt-32">
+    <div class="mx-auto w-11/12 md:w-10/12 grid lg:grid-cols-[40%_1fr] items-center">
+
+      <!-- left -->
+      <div class="">
+        <h1 class="font-raleway font-black text-5xl leading-tight">Learn the art of <br>Game Dev</h1>
+        <p class="my-10 leading-loose max-w-prose">This is a comprehensive course on Game Development. You will learn everything from generating
+          an idea to
+          publishing your games to different platforms.</p>
+        <a href="#"><button class="bg-orange"><img src="img/PencilAlt.svg" alt="pencil icon" class="inline mr-2">Enroll
+            Now</button></a>
+      </div>
+
+      <!-- right -->
+      <div class="flex  ">
+        
+        <div class="flex-grow">
+
+          <div class="relative w-fit top-5 sm:top-[30%] ml-auto">
+            <div class="absolute top-2 left-2 h-full w-full bg-gradient-to-b from-lightblue to-[#3B448F] rounded-[32px]"></div>
+            <div class="bg-white rounded-3xl px-8 py-3 text-darkgreen relative">
+              <p class="text-center"><span class="font-bold text-3xl">32K</span><br>Students Enrolled</p>
+            </div>
+          </div>
+
+          <div class="relative w-fit mt-10 sm:mt-0 sm:top-[50%]">
+            <div class="absolute top-2 left-2 h-full w-full bg-gradient-to-b from-lightblue to-[#3B448F] rounded-[32px]"></div>
+            <div
+              class="bg-white rounded-3xl px-8 py-3 text-darkgreen relative text-center">
+              <p><span class="font-bold text-3xl">4.7 <img src="img/emojione_star.svg" alt="star" class="inline-block -mt-2 "></span><br>Overall Rating</p>
+            </div>
+          </div>
+
+        </div>
+        
+        <img src="img/hero-image.png" alt="a girl with a book" class="self-end -ml-12 xs:ml-0">
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- end of hero section -->
+
+
+  <!-- testimonial section -->
+  <section class="mt-32">
+    <div class="grid lg:grid-cols-2 gap-8 items-center w-10/12 mx-auto">
+
+      <!-- left -->
+      <div class="relative pt-8 lg:order-first order-last">
+        <!-- graph element vertical thick line -->
+        <div class="w-7  h-[546px] bg-darkgreen rounded-3xl absolute left-20 top-0"></div>
+        <!-- card one -->
+        <div class="font-raleway text-darkgreen lg:w-96 shadow-2xl rounded-3xl bg-white relative">
+          <div class="px-8 py-6 bg-lightblue rounded-3xl">
+            <p class="text-white text-lg font-black leading-relaxed">This is a great course. It helped me a lot. Thank you :)</p>
+          </div>
+          <div class="px-8 flex justify-between items-center">
+            <div>
+              <p class="text-2xl font-black  ">Jane Cooper</p>
+              <p class="text-lg font-normal leading-snug">Developer, Sony</p>
+            </div>
+            <img src="img/Ellipse1.png" alt="Jane" class="relative -top-3">
+          </div>
+        </div>
+        <!-- card two -->
+        <div class="font-raleway text-darkgreen lg:w-96 shadow-2xl rounded-3xl mt-12 lg:ml-8 relative bg-white">
+          <div class="px-8 py-6 bg-orange rounded-3xl">
+            <p class="text-white text-lg font-black leading-relaxed">Amazing Work! Well done!</p>
+          </div>
+          <div class="px-8 flex justify-between items-center">
+            <div>
+              <p class="text-2xl font-black">Jacob Jones</p>
+              <p class="text-lg font-normal leading-snug">Designer, Facebook</p>
+            </div>
+            <img src="img/Ellipse2.png" alt="Jacob" class="relative -top-3">
+          </div>
+        </div>
+      </div>
+
+      <!-- right -->
+      <div class="text-darkgreen">
+        <h2 class="text-6xl font-black font-raleway ">What our students say</h2>
+        <p class="leading-loose mt-4">All students get access to all the videos and also the source code of the projects.
+          You will also have access to a private Discord channel where you can discuss your doubts.</p>
+          <button class="bg-orange mt-4">Learn more</button>
+        </div>
+      </div>
+    </section>
+  <!-- end testimonial section -->
+
+  
+  
+  <!-- courses section -->
+  
+  <section class="mt-32 bg-gradient-to-b from-lightblue to-[#3B448F] py-16">
+    <!-- wrapper -->
+    <div class="w-10/12 mx-auto text-right">
+      <h2 class="text-6xl font-black text-center text-white font-raleway mb-14">Our Courses</h2>
+      <!-- container -->
+      <div class="grid md:grid-cols-2 gap-8 text-darkgreen font-black font-raleway text-left">
+        
+        <div class="rounded-3xl px-8 bg-white flex flex-col gap-7 justify-between">
+          <img src="img/Rectangle1.png" alt="course image">
+          <div class="flex gap-2 justify-between">
+            <h3 class="text-2xl sm:text-3xl">Game Design Essentials</h3>
+            <div class="flex items-center gap-1"><img src="img/Clock.svg" alt="clock icon"><span class="">8&nbsp;HRS</span></div>
+          </div>
+          <!-- decorator bottom -->
+          <div class="h-2 bg-darkgreen w-full rounded-full"></div>
+        </div>
+
+        <div class="rounded-3xl px-8 bg-white flex flex-col gap-7 justify-between">
+          <img src="img/Rectangle2.png" alt="course image">
+          <div class="flex gap-2 justify-between">
+            <h3 class="text-2xl sm:text-3xl">Unity Game Engine Fundamentals</h3>
+            <div class="flex items-center gap-1"><img src="img/Clock.svg" alt="clock icon"><span class="">8&nbsp;HRS</span></div>
+          </div>
+          <!-- decorator bottom -->
+          <div class="h-2 bg-darkgreen w-full rounded-full"></div>
+        </div>
+        
+      </div>
+      
+      <button class="bg-orange mt-8 ">All Courses</button>
+    </div>
+  </section>
+  <!-- end courses section -->
+
+  <!-- our app section -->
+  <section class="my-20 text-darkgreen">
+    <h2 class="text-6xl font-black text-center  font-raleway mb-4">Get our App </h2>
+    <p class=" text-center">You can use our App for better experience on smartphones</p>
+    <div class="flex gap-10 justify-center mt-10 flex-wrap">
+      <button class="bg-dark text-white rounded-none flex items-center gap-3 px-8 py-5 w-80"><img src="img/appstore.svg" alt="app store logo"> App Store</button>
+      <button class="bg-dark text-white rounded-none flex items-center gap-3 px-8 py-5 w-80"><img src="img/google.svg" alt="google store logo"> Google Play</button>
+    </div>
+  </section>
+  <!-- end our app ssection -->
+
+  <footer class="bg-dark text-light py-10">
+    <!-- wrapper -->
+    <div class="w-11/12 sm:w-10/12 mx-auto ">
+      <div class="flex gap-8 justify-center lg:justify-between flex-wrap lg:flex-nowrap">
+
+        <nav>
+          <h3  class="text-orange text-center lg:text-left text-lg font-bold ">Quick links</h3>
+          <ul class="space-y-3 mt-3 lg:ml-8 lg:text-left text-center">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <h3  class="text-orange text-center lg:text-left text-lg font-bold ">Course</h3>
+          <ul class="space-y-3 mt-3 lg:ml-8 lg:text-left text-center">
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">All Courses</a></li>
+          </ul>
+        </nav>
+
+        <div class="lg:pl-8 text-center lg:text-left flex-grow sm:flex-grow-0">
+          <h3  class="text-orange text-lg font-bold  lg:-ml-8 mb-3">Contact Us</h3>
+          <a href="mailto:contact@email.com">contact@email.com</a>
+          <div class="mt-3 flex gap-4 justify-center lg:justify-start">
+            <img src="img/facebook.svg" alt="facebook icon">
+            <img src="img/instagram.svg" alt="instagram icon">
+          </div>
+            <form action="" class=" sm:bg-white rounded-lg grid justify-items-center items-center sm:grid-cols-[1fr_auto] gap-2 px-2 mt-5 flex-wrap">
+              <input type="email" name="email" id="email" placeholder="Your email here" class="h-10 w-full bg-white rounded-lg px-2">
+              <button type="submit" class="w-32 h-7 bg-darkgreen font-normal text-base px-2 py-0 rounded-lg">Subscribe</button>
+            </form>
+        </div>
+
+      </div>
+      <p class="mt-8 text-center lg:text-left">This website is developed by GTCoding © 2021</p>
+    </div>
+  </footer>
+
+
+  <!-- SVGS -->
+  <!-- <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="cross" width="131px" height="131px">
+        <path
+          fill-rule="evenodd"
+          d="M130.182,73.673 L72.866,73.673 L72.866,131.000 L56.091,131.000 L56.091,73.673 L0.173,73.673 L0.173,56.894 L56.091,56.894 L56.091,0.965 L72.866,0.965 L72.866,56.894 L130.182,56.894 L130.182,73.673 Z"
+        />
+      </symbol>
+
+      <symbol
+        id="check-circle"
+        viewBox="0 0 305.002 305.002"
+        xml:space="preserve"
+      >
+        <path
+          id="circle"
+          d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5
+			S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5
+			c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z"
+        />
+        <path
+          id="check"
+          d="M218.473,93.97l-90.546,90.547l-41.398-41.398c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678
+			l50.237,50.237c2.441,2.44,5.64,3.661,8.839,3.661c3.199,0,6.398-1.221,8.839-3.661l99.385-99.385
+			c4.881-4.882,4.881-12.796,0-17.678C231.269,89.089,223.354,89.089,218.473,93.97z"
+        />
+      </symbol>
+    </svg> -->
+</body>
+
+</html>
+
+<!-- <img srcset="/assets/images/image.jpg {{ image('/assets/images/image.jpg', { widths: [320, 640, 1280] }).srcset }}" alt="My Image"> -->

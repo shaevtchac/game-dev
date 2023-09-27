@@ -1,0 +1,110 @@
+@import url(preflight.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --num1: 5;
+  --num2: 35;
+}
+
+@property --num1 {
+  syntax: '<integer>';
+  initial-value: 5;
+  inherits: false;
+}
+@property --num2 {
+  syntax: '<integer>';
+  initial-value: 35;
+  inherits: false;
+}
+
+@layer base {
+}
+
+@layer components {
+  button {
+    @apply px-8 py-4 rounded-3xl font-bold text-white text-lg;
+    transition: 300ms ease-in;
+
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+  .h2 {
+    @apply text-[1.3em] leading-tight font-bold uppercase;
+  }
+}
+
+@layer utilities {
+}
+
+
+/* _____________________________________________________ animations ________________________________________________ */
+
+/* data-animation="num1" data-duration="3s" data-timing="cubic-bezier(0,0,0,1)" for best results class="before:[content:counter(num1)] [counter-reset:num1_var(--num1)]"*/
+@keyframes num1 {
+  from {
+    --num1: 0;
+  }
+  to {
+    --num1: 5;
+  }
+}
+@keyframes num2 {
+  from {
+    --num2: 0;
+  }
+  to {
+    --num2: 35;
+  }
+}
+
+@keyframes fade-from-left {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-from-right {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-from-top {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-from-bottom {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
